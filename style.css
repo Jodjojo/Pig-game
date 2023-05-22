@@ -25,7 +25,7 @@ body {
 /* LAYOUT */
 main {
   position: relative;
-  width: 100rem;
+  width: 100vw;
   height: 60rem;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
@@ -168,4 +168,76 @@ main {
 
 .hidden {
   display: none;
+}
+
+@media only screen and (max-width: 620px) {
+  .btn {
+    position: absolute;
+    left: 50vw;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0 1rem;
+  }
+  .dice {
+    position: absolute;
+    left: 50vw;
+    height: 8rem;
+  }
+  .player {
+    flex: 50vw;
+    padding: 9rem 0;
+  }
+  .current {
+    width: 20vw;
+    padding: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .current-score {
+    font-size: 2.5rem;
+  }
+
+  .name {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .score {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .btn {
+    position: absolute;
+    left: 50vw;
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+  }
+  .dice {
+    height: 6rem;
+  }
+  .current-score {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .current-label {
+    font-size: 1.4rem;
+  }
+  .score {
+    font-size: 5rem;
+  }
 }
